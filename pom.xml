@@ -3,6 +3,7 @@
   <groupId>com.csc380</groupId>
   <artifactId>csc380</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -20,7 +21,7 @@
   	<dependency>
 	   <groupId>com.google.maps</groupId>
 	   <artifactId>google-maps-services</artifactId>
-	   <version>3.31</version>
+	   <version>0.2.6</version>
 	</dependency>
     <dependency>
    		<groupId>org.slf4j</groupId>
