@@ -32,55 +32,17 @@ public class Main {
 		Map map = new Map();
 		
 		Order order1 = new Order(3, new Item("Steak", 20), new Item("Pizza", 30), new Item("Fries", 10));
-		System.out.println(order1.getItem(1).getFoodName());
-		
 		order1.setName("Andrew");
 		order1.setAddress("233 Slawson Drive, Camillus NY 13031");
 		
-		Load load = new Load(order1);
+		Order order2 = new Order(1, new Item("Steak", 20));
+		order2.setAddress("9060 NY104");
+		
+		Load load = new Load(order1, order2);
 		
 		map.DistanceCall(load.getAddresses());
 		
-		
-		
-		/*GeocodingResult[] results = null;
-			try {
-				results = GeocodingApi.geocode(context, a1).await();
-			} catch (ApiException | InterruptedException | IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			Gson gson = new GsonBuilder().setPrettyPrinting().create();
-			System.out.println(gson.toJson(results[0].geometry));
-			
-			JSONObject obj = new JSONObject(gson.toJson(results[0].geometry));
-			System.out.println(obj);*/
-	}
 
-	public void printDeliverySchedule()
-	{
-		int orders = 0;
-
-		System.out.println("Delivery Schedule:");
-		if(orders == 1)
-		{
-			System.out.println("Address one: ");
-		}
-
-		else if(orders == 2)
-		{
-			System.out.println("Address one: ");
-			System.out.println("Address two: ");
-		}
-
-		else if(orders == 3)
-		{
-			System.out.println("Address one: ");
-			System.out.println("Address two: ");
-			System.out.println("Address three: ");
-		}
-		
-		
 	}
 
 }

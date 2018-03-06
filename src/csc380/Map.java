@@ -36,12 +36,10 @@ public class Map {
 		final String HOME_BASE = "7060 NY104";
 		
 		int distanceAsNumber;
-		
 		String address1, address2, address3;
+		
 		address1 = address[0];
 		address2 = null;
-		//address2 = address[1];
-		//address3 = address[2];
 		String distanceAsString;
 		
 		final String GEO_API_KEY = "AIzaSyCUcSoFBlKCqqxApVpprxj9CK6L7RrBhTU";
@@ -63,9 +61,13 @@ public class Map {
 		                .await();
 			}
 			
-			catch(ApiException e){
-		        
-		    } catch(Exception e){
+			catch(ApiException e)
+			{
+				System.out.println("There is an issue with the API request.");
+			} 
+			
+			catch(Exception e)
+			{
 		        System.out.println(e.getMessage());
 		    }   
 			

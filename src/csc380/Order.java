@@ -5,12 +5,25 @@ public class Order {
 	Item [] items;
 	String name, address, telephoneNumber;
 	
-	public Order(int numItems, Item itemA, Item itemB, Item itemC)
+	public Order(int numItems, Item itemOne)
 	{
 		items = new Item[numItems];
-		items[0] = itemA;
-		items[1] = itemB;
-		items[2] = itemC;
+		items[0] = itemOne;
+	}
+	
+	public Order(int numItems, Item itemOne, Item itemTwo)
+	{
+		items = new Item[numItems];
+		items[0] = itemOne;
+		items[1] = itemTwo;
+	}
+	
+	public Order(int numItems, Item itemOne, Item itemTwo, Item itemThree)
+	{
+		items = new Item[numItems];
+		items[0] = itemOne;
+		items[1] = itemTwo;
+		items[2] = itemThree;
 	}
 	
 	public Item getItem(int whichItem)
