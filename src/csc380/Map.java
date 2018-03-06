@@ -72,12 +72,19 @@ public class Map {
 			
 			object = gson.toJson(trix);
 			
+			System.out.println(getDistance(object));
 			
 			//JsonObject obj = gson.toJson(trix);
 			
 
 			
 		}
+	}
+
+	private String getDistance(String o) {   //Finds inMeters value from output
+		// TODO Auto-generated method stub
+		o = o.substring(o.indexOf("\"inMeters\"")+12);
+		return o.substring(0, o.indexOf(","));
 	}
 
 }
