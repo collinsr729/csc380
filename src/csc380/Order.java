@@ -2,15 +2,26 @@ package csc380;
 
 public class Order {
 	
-	Item [] items;
-	String name, address, telephoneNumber;
+	private Item [] items;
+	private String name, address, telephoneNumber;
 	
-	public Order(int numItems, Item itemA, Item itemB, Item itemC)
+	public Order(Item itemA, Item itemB, Item itemC)
 	{
-		items = new Item[numItems];
+		items = new Item[3];
 		items[0] = itemA;
 		items[1] = itemB;
 		items[2] = itemC;
+	}
+	public Order(Item itemA, Item itemB)
+	{
+		items = new Item[2];
+		items[0] = itemA;
+		items[1] = itemB;
+	}
+	public Order(Item itemA)
+	{
+		items = new Item[1];
+		items[0] = itemA;
 	}
 	
 	public Item getItem(int whichItem)
