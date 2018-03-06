@@ -35,12 +35,14 @@ public class Map {
 	{
 		final String HOME_BASE = "7060 NY104";
 		
+		int distanceAsNumber;
+		
 		String address1, address2, address3;
 		address1 = address[0];
 		address2 = null;
 		//address2 = address[1];
 		//address3 = address[2];
-		String object;
+		String distanceAsString;
 		
 		final String GEO_API_KEY = "AIzaSyCUcSoFBlKCqqxApVpprxj9CK6L7RrBhTU";
 		GeoApiContext context = new GeoApiContext.Builder()
@@ -70,13 +72,13 @@ public class Map {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			System.out.println(gson.toJson(trix.rows[0]));		
 			
-			object = gson.toJson(trix);
+			distanceAsString = gson.toJson(trix);
 			
-			System.out.println(getDistance(object));
+			distanceAsString = getDistance(distanceAsString);
 			
-			//JsonObject obj = gson.toJson(trix);
+			distanceAsNumber = Integer.parseInt(distanceAsString);
 			
-
+			System.out.println(distanceAsNumber - 22);
 			
 		}
 	}
