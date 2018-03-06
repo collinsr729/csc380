@@ -7,8 +7,8 @@ public class Item {
 	
 	public Item(String foodName, int prepTime)
 	{
-		foodName = this.foodName;
-		prepTime = this.prepTime;
+		this.foodName = foodName;
+		this.prepTime = prepTime;
 	}
 	
 	public String getFoodName()

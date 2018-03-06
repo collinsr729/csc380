@@ -31,8 +31,17 @@ public class Main {
 		
 		Map map = new Map();
 		
-		map.DistanceCall(a);
+		//map.DistanceCall(a);
 		
+		Order order1 = new Order(3, new Item("Steak", 20), new Item("Pizza", 30), new Item("Fries", 10));
+		System.out.println(order1.getItem(1).getFoodName());
+		
+		order1.setName("Andrew");
+		order1.setAddress("233 Slawson Drive, Camillus NY 13031");
+		
+		Load load = new Load(order1);
+		
+		map.DistanceCall(load.getAddresses());
 		
 		
 		

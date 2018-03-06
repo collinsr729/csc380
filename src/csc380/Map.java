@@ -31,17 +31,16 @@ public class Map {
 		return "";
 	}
 	
-	public void DistanceCall(String addresses[])
+	public void DistanceCall(String address[])
 	{
 		final String HOME_BASE = "7060 NY104";
 		
 		String address1, address2, address3;
+		address1 = address[0];
+		address2 = null;
+		//address2 = address[1];
+		//address3 = address[2];
 		String object;
-		
-		address1 = addresses[0];
-		address2 = addresses[1];
-		address3 = addresses[2];
-		
 		
 		final String GEO_API_KEY = "AIzaSyCUcSoFBlKCqqxApVpprxj9CK6L7RrBhTU";
 		GeoApiContext context = new GeoApiContext.Builder()

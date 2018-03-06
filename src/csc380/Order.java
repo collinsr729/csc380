@@ -13,13 +13,18 @@ public class Order {
 		items[2] = itemC;
 	}
 	
-	public Item getItem()
+	public Item getItem(int whichItem)
 	{
 		Item returningItem;
 		
-		returningItem = items[0];
+		returningItem = items[whichItem];
 		
 		return returningItem;
+	}
+	
+	public void setName(String customerName)
+	{
+		name = customerName;
 	}
 	
 	public String getName()
@@ -27,6 +32,11 @@ public class Order {
 		return name;
 	}
 
+	public void setAddress(String destAddress)
+	{
+		address = destAddress;
+	}
+	
 	public String getAddress()
 	{
 		return address;
