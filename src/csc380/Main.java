@@ -49,7 +49,7 @@ public class Main {
 		
 		Load load2 = new Load(order1, order2);
 		map.DistanceCall(order2.getAddress());
-		String addressOrder = map.calculateRoute("7060 ny104 oswego", load2.getAddresses());
+		String addressOrder = map.calculateRoute("7060 ny104 oswego", load.getAddresses());
 		System.out.println(addressOrder);
 		
 		map.DistanceCall(order1.getAddress());
