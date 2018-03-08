@@ -6,27 +6,6 @@ public class Order {
 	private String name, address, telephoneNumber;
 	
 
-	public Order(int numItems, Item itemOne)
-	{
-		items = new Item[numItems];
-		items[0] = itemOne;
-	}
-	
-	public Order(int numItems, Item itemOne, Item itemTwo)
-	{
-		items = new Item[numItems];
-		items[0] = itemOne;
-		items[1] = itemTwo;
-	}
-	
-	public Order(int numItems, Item itemOne, Item itemTwo, Item itemThree)
-	{
-		items = new Item[numItems];
-		items[0] = itemOne;
-		items[1] = itemTwo;
-		items[2] = itemThree;
-	}
-
 	public Order(Item itemA, Item itemB, Item itemC)
 	{
 		items = new Item[3];
