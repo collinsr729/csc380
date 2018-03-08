@@ -51,9 +51,12 @@ public class Main {
 		Load load2 = new Load(order1, order2);
 		map.DistanceCall(order2.getAddress());
 		String addressOrder = map.calculateRoute("7060 ny104 oswego", load.getAddresses());
+<<<<<<< HEAD
 		System.out.println(addressOrder);
+=======
+>>>>>>> dba2c407b69a78a5b69910ff26811cb83a5dde01
 		
-		map.DistanceCall(order1.getAddress());
+		System.out.println(addressOrder);
 		
 
 	}
