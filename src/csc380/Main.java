@@ -34,7 +34,8 @@ public class Main {
 		Map map = new Map();
 
 		Order order1 = new Order(3, new Item("Steak", 20), new Item("Pizza", 30), new Item("Fries", 10));
-
+		
+		
 		order1.setName("Andrew");
 		order1.setAddress("233 Slawson Drive, Camillus NY 13031");
 		Order o2 = new Order(1, new Item("Fries", 10));
